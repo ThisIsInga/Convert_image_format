@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Image Format</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+   <div id="cbwrap">
+  <h1 id="cbtitle">Convert Image Format</h1>
+
+  <!-- (A) IMAGE FORMAT CONVERT FORM -->
+  <form id="cForm" onsubmit="return convert.read()">
+    <label>SELECT FORMAT</label>
+    <select id="cFormat">
+      <option value="webp">WEBP</option>
+      <option value="jpeg">JPG</option>
+      <option value="png">PNG</option>
+      <option value="gif">GIF</option>
+    </select>
+
+    <label>CHOOSE FILE</label>
+    <input type="file" id="cFile" accept="image/*" required>
+
+    <input type="submit" value="Go">
+  </form>
+
+  <!-- (X) NOT IMPORTANT -->
+  <div id="cbinfo">Visit <a href="https://code-boxx.com/convert-image-file-format-javascript/" target="_blank">Code Boxx</a> for more details!</div>
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
